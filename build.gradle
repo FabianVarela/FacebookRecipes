@@ -1,17 +1,10 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
-    
     repositories {
         google()
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
-        
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
@@ -19,9 +12,102 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    //  SDK
+    minSdkVersion = 21
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+
+    //  Support libraries
+    suportLibraryVersion = '26.1.0'
+    constraintLayoutVersion = '1.0.2'
+
+    //  Retrofit
+    retrofitVersion = '2.3.0'
+
+    //  Lifecycle
+    androidLifecycleVersion = '1.0.0'
+
+    //  Live data
+    liveDataVersion = '1.0.0'
+
+    //  Room persistence
+    roomVersion = '1.0.0'
+
+    //  Dependency injection controls
+    butterknifeVersion = '8.8.1'
+
+    //  Facebook
+    facebookVersion = '[4,5)'
+
+    //  EventBus
+    eventbusVersion = '3.1.1'
+
+    //  Dependency injection
+    daggerVersion = '2.14.1'
+
+    //  Glide images
+    glideVersion = '4.6.1'
+
+    //  Unit test
+    robolectricVersion = '3.7'
+    mockitoVersion = '2.10.0'
+    testRunnerVersion = '1.0.1'
+    esspresoCoreVersion = '3.0.1'
+    junitVersion = '4.12'
+
+    libs = [
+            //  Support libraries
+            supportLibrary        : "com.android.support:appcompat-v7:$rootProject.ext.suportLibraryVersion",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion",
+            recyclerView          : "com.android.support:recyclerview-v7:$rootProject.ext.suportLibraryVersion",
+            supportDesign         : "com.android.support:design:$rootProject.ext.suportLibraryVersion",
+
+            //  Retrofit
+            retrofit              : "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion",
+            retrofitGson          : "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion",
+
+            //  Lifecycle
+            lifecycleCompiler     : "android.arch.lifecycle:compiler:$rootProject.ext.androidLifecycleVersion",
+
+            //  Live data
+            liveData              : "android.arch.lifecycle:extensions:$rootProject.ext.liveDataVersion",
+
+            //  Room persistence
+            roomPersistence       : "android.arch.persistence.room:compiler:$rootProject.ext.roomVersion",
+            roomPersistenceRuntime: "android.arch.persistence.room:runtime:$rootProject.ext.roomVersion",
+
+            //  Dependency injection controls
+            butterknife           : "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion",
+            butterknifeCompiler   : "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion",
+
+            //  Facebook
+            facebookSdk           : "com.facebook.android:facebook-android-sdk:$rootProject.ext.facebookVersion",
+
+            //  EventBus
+            eventBus              : "org.greenrobot:eventbus:$rootProject.ext.eventbusVersion",
+
+            //  Dependency injection
+            dagger                : "com.google.dagger:dagger:$rootProject.ext.daggerVersion",
+            daggercompiler        : "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion",
+
+            //  Glide images
+            glide                 : "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion",
+
+            //  Unit test
+            robolectric           : "org.robolectric:robolectric:$rootProject.ext.robolectricVersion",
+            mockito               : "org.mockito:mockito-android:$rootProject.ext.mockitoVersion",
+            mockitoCore           : "org.mockito:mockito-core:$rootProject.ext.mockitoVersion",
+            testRunner            : "com.android.support.test:runner:$rootProject.ext.testRunnerVersion",
+            esspresoCore          : "com.android.support.test.espresso:espresso-core:$rootProject.ext.esspresoCoreVersion",
+            jUnit                 : "junit:junit:$rootProject.ext.junitVersion"
+    ]
 }
