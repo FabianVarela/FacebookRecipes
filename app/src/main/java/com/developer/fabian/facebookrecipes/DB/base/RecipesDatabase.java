@@ -1,11 +1,16 @@
 package com.developer.fabian.facebookrecipes.DB.base;
 
+import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
 import com.developer.fabian.facebookrecipes.DB.dao.IRecipesDao;
+import com.developer.fabian.facebookrecipes.entities.Recipe;
 
+@Database(entities = {
+        Recipe.class
+}, version = 1, exportSchema = false)
 public abstract class RecipesDatabase extends RoomDatabase {
 
     private static RecipesDatabase instance;

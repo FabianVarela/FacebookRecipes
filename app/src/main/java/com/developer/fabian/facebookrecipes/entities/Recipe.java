@@ -3,6 +3,7 @@ package com.developer.fabian.facebookrecipes.entities;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -11,6 +12,7 @@ public class Recipe {
 
     @SerializedName("recipe_id")
     @PrimaryKey
+    @NonNull
     private String recipeId;
 
     @ColumnInfo(name = "title")
