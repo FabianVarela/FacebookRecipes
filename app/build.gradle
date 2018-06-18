@@ -45,6 +45,7 @@ dependencies {
     implementation libs.retrofitGson
 
     //  Lifecycle
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     annotationProcessor libs.lifecycleCompiler
 
     //  Live data
