@@ -7,7 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 
 import com.developer.fabian.facebookrecipes.R;
-import com.developer.fabian.facebookrecipes.RecipeMainActivity;
+import com.developer.fabian.facebookrecipes.main.view.RecipeMainActivity;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
