@@ -5,7 +5,7 @@
     android:id="@+id/loginLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.developer.fabian.facebookrecipes.login.UI.LoginActivity">
+    tools:context="com.developer.fabian.facebookrecipes.login.ui.LoginActivity">
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/btnLogin"

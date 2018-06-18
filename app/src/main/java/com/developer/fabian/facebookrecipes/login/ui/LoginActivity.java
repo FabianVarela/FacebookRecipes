@@ -1,4 +1,4 @@
-package com.developer.fabian.facebookrecipes.login.UI;
+package com.developer.fabian.facebookrecipes.login.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
