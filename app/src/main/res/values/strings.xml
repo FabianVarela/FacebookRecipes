@@ -9,4 +9,6 @@
     <string name="recipemain_menu_action_showall">See all</string>
     <string name="recipemain_menu_action_showfavs">See favorites</string>
     <string name="global_menu_action_logout">Log out</string>
+    <string name="dismiss_description">Dismiss</string>
+    <string name="save_description">Save</string>
 </resources>

@@ -9,4 +9,6 @@
     <string name="recipemain_menu_action_showall">Ver todos</string>
     <string name="recipemain_menu_action_showfavs">Ver favoritos</string>
     <string name="global_menu_action_logout">Cerrar sesión</string>
+    <string name="dismiss_description">Descartar</string>
+    <string name="save_description">Guardar</string>
 </resources>
