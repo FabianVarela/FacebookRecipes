@@ -6,7 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
 import com.developer.fabian.facebookrecipes.DB.dao.IRecipesDao;
-import com.developer.fabian.facebookrecipes.entities.Recipe;
+import com.developer.fabian.facebookrecipes.entity.Recipe;
 
 @Database(entities = {
         Recipe.class

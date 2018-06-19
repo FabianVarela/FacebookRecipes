@@ -4,7 +4,7 @@ import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
-import com.developer.fabian.facebookrecipes.entities.Recipe;
+import com.developer.fabian.facebookrecipes.entity.Recipe;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.developer.fabian.facebookrecipes.entities;
+package com.developer.fabian.facebookrecipes.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

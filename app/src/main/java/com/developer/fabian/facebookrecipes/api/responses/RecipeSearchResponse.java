@@ -1,6 +1,6 @@
 package com.developer.fabian.facebookrecipes.api.responses;
 
-import com.developer.fabian.facebookrecipes.entities.Recipe;
+import com.developer.fabian.facebookrecipes.entity.Recipe;
 
 import java.util.List;
 
